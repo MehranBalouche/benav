@@ -83,6 +83,9 @@ input:focus {
 .form-check-label:hover {
   color: #0d6efd;
 }
+.fs-7{
+  font-size: 0.8rem!important;
+}
 /* ------------Navebar--------------- */
 .navbar-contents {
   display: flex;
@@ -770,4 +773,29 @@ input:focus {
   transition: all 0.4s;
   font-size: 24px;
   margin: 0 1rem;
+}
+
+
+/*======================= contact page======================= */
+/* ------------form-------------- */
+.form-contact_btn{
+  padding: 0.4rem 1.3rem;
+  border: 2px solid #0c2785;
+  background-color: #0c2785;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.form-contact_btn:hover{
+  color: #0c2785;
+  background-color: #fff;
+}
+.form-control_custom{
+
+}
+@media only screen and (max-width: 768px) {
+  .form-control_custom{
+    width: 100%!important;
+  }
 }
