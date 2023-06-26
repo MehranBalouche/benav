@@ -9,7 +9,7 @@
 }
 body {
   background-color: #f8f8f8;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 .body-shape {
   width: 400px;
@@ -321,7 +321,9 @@ input:focus {
 }
 .service-cards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
 }
 .service-content-card {
   width: 250px;
@@ -443,8 +445,7 @@ input:focus {
   color: #fff;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 425px) {
-}
+
 /* ------------------Skills Progress Bar------------------ */
 .skills-section {
   background-color: #f1f1f1;
@@ -489,21 +490,21 @@ input:focus {
   font-weight: 700;
 }
 
-.hireme-contents {
+.whyhireme-contents {
   max-width: 500px;
   margin: auto;
   padding-bottom: 3rem;
 }
-.hireme-content_title {
+.whyhireme-content_title {
   font-size: 26px;
   text-transform: capitalize;
 }
-.hireme-content_description {
+.whyhireme-content_description {
   text-align: justify;
   margin-top: 2rem;
   margin-bottom: 1.8rem;
 }
-.hireme-content_btn {
+.whyhireme-content_btn {
   padding: 0.4rem 1.3rem;
   border: 2px solid #0c2785;
   background-color: #0c2785;
@@ -511,11 +512,11 @@ input:focus {
   font-size: 14px;
   transition: all 0.4s;
 }
-.hireme-content_btn:hover {
+.whyhireme-content_btn:hover {
   background-color: #fff;
   color: #0c2785;
 }
-.hireme-contents_list {
+.whyhireme-contents_list {
   max-width: 500px;
   background: #0c2785;
   padding: 3rem;
@@ -529,7 +530,7 @@ input:focus {
   top: -100px;
   left: -43px;
 }
-.hireme-content_list_item {
+.whyhireme-content_list_item {
   list-style: none;
   position: relative;
 }
@@ -632,6 +633,18 @@ input:focus {
 .indicators-active {
   opacity: 1;
 }
+@media only screen and (max-width: 430px) {
+  .testimonial-card-header_titel {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .testimonial-card-header_text {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
 /* ---------------Latest news-------------- */
 .news-cards {
   display: flex;
@@ -685,25 +698,25 @@ input:focus {
   text-align: justify;
 }
 
-/* ---------------Why Hire Me---------------- */
+/* ---------------Hire Me---------------- */
 .hireme {
   background-color: #0c2785;
   padding: 3rem 0;
   margin: 3rem 0;
 }
-.whyhireme-contents {
+.hireme-contents {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.whyhireme_title {
+.hireme_title {
   color: #ffffff;
   text-transform: capitalize;
   text-align: start;
   margin-bottom: 1rem;
 }
-.whyhireme-btn {
+.hireme-btn {
   color: #0c2785;
   background: #ffffff;
   border: 0;
@@ -711,19 +724,19 @@ input:focus {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
-.whyhireme-btn:hover {
+.hireme-btn:hover {
   background-color: #f6f6f6;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  .whyhireme_title {
+  .hireme_title {
     color: #ffffff;
     text-transform: capitalize;
     text-align: start;
     margin-bottom: 1rem;
     font-size: 20px;
   }
-  .whyhireme-btn {
+  .hireme-btn {
     color: #0c2785;
     background: #ffffff;
     border: 0;
@@ -734,21 +747,21 @@ input:focus {
   }
 }
 @media only screen and (max-width: 430px) {
-  .whyhireme-contents {
+  .hireme-contents {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  .whyhireme_title {
+  .hireme_title {
     color: #ffffff;
     text-transform: capitalize;
     text-align: start;
     margin-bottom: 1rem;
     font-size: 20px;
   }
-  .whyhireme-btn {
+  .hireme-btn {
     color: #0c2785;
     background: #ffffff;
     border: 0;
@@ -843,7 +856,7 @@ input:focus {
   transition: all 0.4s;
   text-transform: capitalize;
 }
-.blog_btn:hover{
+.blog_btn:hover {
   background-color: #fff;
   color: #020d72;
 }
@@ -851,4 +864,63 @@ input:focus {
   .blog-section {
     margin-top: 10rem;
   }
+}
+/*======================= About Me Page======================= */
+/* .about-header-img {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  max-width: 900px;
+  min-height: 500px;
+  background-image: url(./../images/Untitled-1.png);
+}
+.about-header-content_details{
+  width: 360px;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -50px;
+  left: 80%;
+} */
+
+@media only screen and (max-width: 768px) {
+  /* .about-header-img {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    max-width: 900px;
+    min-height: 400px;
+    background-image: url(./../images/Untitled-1.png);
+  }
+  .about-header-content_details{
+    width: 360px;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -50px;
+    left: 60%;
+  } */
+}
+/*======================= Services Page======================= */
+.feature-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.feature-card{
+    display: flex;
+    width: 400px;
+    padding: 5px;
+    align-items: center;
+    margin: 1rem;
+}
+.feature-card_img{
+  width: 120px;
+  height: 110px;
+}
+.feature-card_contents{
+  padding: 10px;
 }
