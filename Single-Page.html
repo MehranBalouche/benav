@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benav - Single Page</title>
+    <!-- this for favicon -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- bootstrap style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Start Nabar -->
+    <nav class="navbar navbar-expand-lg px-0 px-md-5">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-custom" href="./index.html"
+          >benav<i class="bi bi-dot fs-1"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./about-me.html">about me</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./services.html">services</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./blog.html">blog</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="nav-btn" type="submit">Hire me</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start -->
+    <section class="py-3 my-3 py-md-5 my-lg-5">
+      <div class="container">
+        <div class="row">
+           <!-- Start Main -->
+          <div class="col-md-12 col-lg-10">
+            <div class="row justify-content-center"></div>
+          </div>
+          <!-- End Main -->
+           <!-- Start Sidebar -->
+          <div class="col-md-8 col-lg-2">
+            <div class="row justify-content-center">
+              <div class="d-flex flex-column flex-nowrap align-items-start">
+                <!-- start search part -->
+                <div class="sidebar-search">
+                  <label class="sidebar-search_label" for="searchbox">Search</label>
+                  <input class="sidebar-search_inout" id="searchbox" type="text" placeholder="Enter search keywords"/>
+                  <i class="bi bi-search sidebar-search_icon"></i>
+                </div>
+                <!-- End search part -->
+                <!-- Start Categories part -->
+                <div class="sidebar-categories">
+                  <p class="sidebar-categorie_title">categories</p>
+                  <p class="sidebar-categorie_item"><i class="bi bi-tag"></i> Tutorials (47)</p>
+                  <p class="sidebar-categorie_item"><i class="bi bi-tag"></i> Design (35)</p>
+                  <p class="sidebar-categorie_item"><i class="bi bi-tag"></i> Prototype (21)</p>
+                  <p class="sidebar-categorie_item"><i class="bi bi-tag"></i> UX / UI (19)</p>
+                  <p class="sidebar-categorie_item"><i class="bi bi-tag"></i> Tricks (14)</p>
+                </div>
+                <!-- End Categories part -->
+                <!-- Start Tags part -->
+                <div class="sidebar-tags mt-2">
+                  <p class="sidebar-tag_title">tag</p>
+                  <div class="d-flex flex-wrap justify-content-start">
+                    <span class="sidebar-tag_item">Design</span>
+                    <span class="sidebar-tag_item">Tricks</span>
+                    <span class="sidebar-tag_item">HTML</span>
+                    <span class="sidebar-tag_item">Prototype</span>
+                    <span class="sidebar-tag_item">CSS</span>
+                    <span class="sidebar-tag_item">UX / UI</span>
+                    <span class="sidebar-tag_item">PSD</span>
+                    <span class="sidebar-tag_item">Wireframe</span>
+                    <span class="sidebar-tag_item">XD</span>
+                  </div>
+                </div>
+                <!-- End Tags part -->
+                <!-- Start ADVERTISING part -->
+                <div class="ad mt-4">
+                  <p class="ad_title">ADVERTISING</p>
+                  <div class="mt-2 position-relative">
+                    <img class="ad_img" src="./images/AD.png" alt="AD">                    
+                    <p class="ad_text">AD here</p>
+                  </div>
+                </div>
+                <!-- End ADVERTISING part -->
+              </div>
+            </div>
+          </div>
+          <!-- End Sidebar -->
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+    <!-- Start Footer -->
+    <section>
+      <div class="container">
+        <div class="row mb-2">
+          <h1 class="footer-barnd">benav <span> . </span></h1>
+        </div>
+        <div class="row my-2">
+          <div class="">
+            <ul class="footer-links d-none d-sm-flex">
+              <a class="footer-link_item" href="#"><li>Home</li></a>
+              <a class="footer-link_item" href="./about-me.html"
+                ><li>About Me</li></a
+              >
+              <a class="footer-link_item" href="./services.html"
+                ><li>Services</li></a
+              >
+              <a class="footer-link_item" href="./blog.html"><li>blog</li></a>
+              <a class="footer-link_item" href="./contact.html"
+                ><li>contact</li></a
+              >
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 mb-4" id="contact">
+          <div class="footer-social_links">
+            <a class="footer-social_icon" href="#"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a class="footer-social_icon" href="#"
+              ><i class="bi bi-stack-overflow"></i
+            ></a>
+            <a class="footer-social_icon" href="#"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a class="footer-social_icon" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Star CopyWrite -->
+    <section class="bg-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="text-center text-capitalize">
+            <h6 class="m-0 p-0">© Tunc Digital 2020. All rights reserved.</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Star CopyWrite -->
+
+    <!-- ****************** -->
+    <!-- mehranBlouche -->
+    <!-- ****************** -->
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my script  -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

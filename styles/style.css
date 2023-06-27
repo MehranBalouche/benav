@@ -9,7 +9,10 @@
 }
 body {
   background-color: #f8f8f8;
-  overflow-x: hidden!important;
+  background-image: url(./../images/body-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
 }
 .body-shape {
   width: 400px;
@@ -835,8 +838,7 @@ input:focus {
   color: #0c2785;
   background-color: #fff;
 }
-.form-control_custom {
-}
+
 @media only screen and (max-width: 768px) {
   .form-control_custom {
     width: 100% !important;
@@ -866,15 +868,10 @@ input:focus {
   }
 }
 /*======================= About Me Page======================= */
-/* .about-header-img {
-  display: flex;
-  justify-content: flex-start;
+.about-header-contents {
   position: relative;
-  max-width: 900px;
-  min-height: 500px;
-  background-image: url(./../images/Untitled-1.png);
 }
-.about-header-content_details{
+.about-header-content_details {
   width: 360px;
   background-color: #fff;
   padding: 1rem;
@@ -882,45 +879,150 @@ input:focus {
   position: absolute;
   bottom: -50px;
   left: 80%;
-} */
-
-@media only screen and (max-width: 768px) {
-  /* .about-header-img {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    max-width: 900px;
-    min-height: 400px;
-    background-image: url(./../images/Untitled-1.png);
-  }
-  .about-header-content_details{
+}
+@media only screen and (max-width: 1440px) {
+  .about-header-content_details {
     width: 360px;
     background-color: #fff;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
-    bottom: -50px;
-    left: 60%;
-  } */
+    bottom: -20px;
+    left: 75%;
+  }
 }
+@media only screen and (max-width: 1024px) {
+  .about-header-content_details {
+    width: 360px;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -20px;
+    left: 55%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-header-content_details {
+    width: 360px;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .about-header-content_details {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .about-header-content_details {
+    max-width: 240px;
+    background-color: #fff;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -20px;
+    left: 10%;
+  }
+}
+
 /*======================= Services Page======================= */
-.feature-cards{
+.feature-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.feature-card{
-    display: flex;
-    width: 400px;
-    padding: 5px;
-    align-items: center;
-    margin: 1rem;
+.feature-card {
+  display: flex;
+  width: 400px;
+  padding: 5px;
+  align-items: center;
+  margin: 1rem;
 }
-.feature-card_img{
+.feature-card_img {
   width: 120px;
   height: 110px;
 }
-.feature-card_contents{
+.feature-card_contents {
   padding: 10px;
+}
+
+
+/*======================= Songle Page======================= */
+/* ----------Sidebar part--------------*/
+
+/* -------searchbox---------- */
+.sidebar-search{
+  position: relative!important;
+}
+.sidebar-search_label{
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  color: #0C2785;
+  font-size: 18px;
+}
+.sidebar-search_inout{
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+}
+.sidebar-search_icon{
+  position: absolute;
+  font-size: 24px;
+  right: 5px;
+}
+/* -----------------Categories Part--------- */
+.sidebar-categories{
+  margin-top: 2rem;
+}
+.sidebar-categorie_title{
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  color: #0C2785;
+  font-size: 18px;
+}
+.sidebar-categorie_item{
+  font-size: 16px;
+}
+
+/* -----------------Tags Part--------- */
+.sidebar-tag_title{
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  color: #0C2785;
+  font-size: 18px;
+}
+.sidebar-tag_item{
+  font-size: 12px;
+  border: 1px solid #0C2785;
+  margin: 2px;
+  padding: 1px 5px;
+  color: #0C2785;
+}
+/* -----------------AD Part--------- */
+.ad_title{
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  color: #0C2785;
+  font-size: 18px;
+}
+.ad_img{
+  width: 100%;
+}
+.ad_text{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
 }
